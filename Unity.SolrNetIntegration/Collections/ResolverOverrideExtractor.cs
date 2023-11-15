@@ -5,6 +5,6 @@ namespace Unity.SolrNetIntegration.Collections
 {
     public abstract class ResolverOverrideExtractor
     {
-        public abstract ResolverOverride[] ExtractResolverOverrides(IBuilderContext context);
+        public abstract ResolverOverride[] ExtractResolverOverrides(BuilderContext context);
     }
 }

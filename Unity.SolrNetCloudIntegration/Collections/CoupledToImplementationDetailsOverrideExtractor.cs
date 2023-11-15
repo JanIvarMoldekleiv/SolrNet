@@ -22,7 +22,7 @@ namespace Unity.SolrNetCloudIntegration.Collections
             public const string ResolverOverrides = "resolverOverrides";
         }
 
-        public override ResolverOverride[] ExtractResolverOverrides(IBuilderContext context)
+        public override ResolverOverride[] ExtractResolverOverrides(ref BuilderContext context)
         {
             // this method is tightly coupled to the implementation of IBuilderContext. It assumes that the 
             // class BuilderContext is used and that a field of type CompositeResolverOverride named 'resolverOverrides'
@@ -50,6 +50,11 @@ namespace Unity.SolrNetCloudIntegration.Collections
             }
 
             return resolverOverrides;
+        }
+
+        public override ResolverOverride[] ExtractResolverOverrides(IBuilderContext context)
+        {
+            throw new NotImplementedException();
         }
     }
 }

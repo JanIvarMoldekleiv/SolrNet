@@ -38,7 +38,7 @@ namespace StructureMap.SolrNetIntegration.Tests
         [Fact]
         public void RegistersSolrConnectionWithAppConfigServerUrl()
         {
-            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            var config =System.Configuration.ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             var solrConfig = (SolrConfigurationSection)config.GetSection("solr");
             var container = new Container(c => c.IncludeRegistry(SolrNetRegistry.Create(solrConfig.SolrServers)));
 
@@ -53,7 +53,7 @@ namespace StructureMap.SolrNetIntegration.Tests
         [Fact]
         public void CheckParseAppConfig()
         {
-            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            var config = System.Configuration.ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             var solrConfig = (SolrConfigurationSection)config.GetSection("solr");
             var servers = solrConfig.SolrServers;
 

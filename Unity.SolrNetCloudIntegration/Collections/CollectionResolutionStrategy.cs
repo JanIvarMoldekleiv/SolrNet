@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using Unity.Builder;
-using Unity.Builder.Strategy;
+using Unity.Strategies
 
 
 namespace Unity.SolrNetCloudIntegration.Collections
@@ -13,14 +13,12 @@ namespace Unity.SolrNetCloudIntegration.Collections
         private static readonly MethodInfo genericResolveCollectionMethod = typeof(CollectionResolutionStrategy)
                 .GetMethod("ResolveCollection", BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.DeclaredOnly);
 
-        private delegate object CollectionResolver(IBuilderContext context);
+        private delegate object CollectionResolver(BuilderContext context);
 
-        public override void PreBuildUp(IBuilderContext context)
+        public override void PreBuildUp(ref BuilderContext context)
         {
-            if (context is null)
-                throw new ArgumentNullException(nameof(context));
 
-            Type typeToBuild = context.BuildKey.Type;
+            Type typeToBuild = context.Type;
 
             if (typeToBuild.IsGenericType)
             {
@@ -42,17 +40,6 @@ namespace Unity.SolrNetCloudIntegration.Collections
             }            
         }
 
-        private static object ResolveCollection<T>(IBuilderContext context)
-        {
-            IUnityContainer container = context.NewBuildUp<IUnityContainer>();
 
-            var extractor = context.NewBuildUp<ResolverOverrideExtractor>();
-
-            var resolverOverrides = extractor.ExtractResolverOverrides(context);
-
-            List<T> results = new List<T>(container.ResolveAll<T>(resolverOverrides));
-
-            return results;
-        }
     }
 }

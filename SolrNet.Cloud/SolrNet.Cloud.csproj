@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net46</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
     <Authors>Mauricio Scheffer and contributors</Authors>
     <Company />
     <Product>SolrNet.Cloud.Core</Product>
@@ -25,7 +25,7 @@ This is the SolrNet.Cloud.Core package, and should be used in combination with a
   <!-- NET 4.6 STUFF: -->
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="ZooKeeperNetEx" Version="3.4.12.1" />
+    <PackageReference Include="ZooKeeperNetEx" Version="3.4.12.4" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net46'">
   

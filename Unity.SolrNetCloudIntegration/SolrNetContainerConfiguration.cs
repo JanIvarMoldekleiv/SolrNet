@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Microsoft.Practices.Unity;
 using SolrNet;
 using SolrNet.Cloud;
-using Unity.Injection;
 
 namespace Unity.SolrNetCloudIntegration
 {

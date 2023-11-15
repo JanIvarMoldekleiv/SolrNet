@@ -13,9 +13,10 @@ namespace Unity.SolrNetIntegration.Collections
 
         private delegate object CollectionResolver(IBuilderContext context);
 
-        public override object PreBuildUp(IBuilderContext context)
+
+
+        public override void PreBuildUp(IBuilderContext context)
         {
-            if (context == null) throw new ArgumentNullException(nameof(context));
 
             Type typeToBuild = context.BuildKey.Type;
 
@@ -38,20 +39,9 @@ namespace Unity.SolrNetIntegration.Collections
                 }
             }
 
-            return null;
+           // return null;
         }
 
-        private static object ResolveCollection<T>(IBuilderContext context)
-        {
-            IUnityContainer container = context.NewBuildUp<IUnityContainer>();
 
-            var extractor = context.NewBuildUp<ResolverOverrideExtractor>();
-
-            var resolverOverrides = extractor.ExtractResolverOverrides(context);
-
-            List<T> results = new List<T>(container.ResolveAll<T>(resolverOverrides));
-
-            return results;
-        }
     }
 }

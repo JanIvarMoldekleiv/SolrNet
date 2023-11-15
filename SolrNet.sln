@@ -1,7 +1,6 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29102.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolrNet", "SolrNet\SolrNet.csproj", "{CEEB8690-3E08-4440-B647-787A58E71CFA}"
 EndProject
@@ -23,10 +22,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutofacContrib.SolrNet", "A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutofacContrib.SolrNet.Tests", "AutofacContrib.SolrNet.Tests\AutofacContrib.SolrNet.Tests.csproj", "{77E47E7C-2CEE-406A-B344-9699DA0F1851}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unity.SolrNetIntegration", "Unity.SolrNetIntegration\Unity.SolrNetIntegration.csproj", "{7645E009-0ADC-420E-B00D-3745934E6AB1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unity.SolrNetIntegration.Tests", "Unity.SolrNetIntegration.Tests\Unity.SolrNetIntegration.Tests.csproj", "{3E29AED1-1680-4EC0-9499-F6B8FB8C1CC9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolrNet.Tests.Integration", "SolrNet.Tests.Integration\SolrNet.Tests.Integration.csproj", "{4BC966D4-2EC0-47FF-B784-B649BFAABD81}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.DependencyInjection.SolrNet", "Microsoft.DependencyInjection.SolrNet\Microsoft.DependencyInjection.SolrNet.csproj", "{8EED7D76-F9CA-40D5-B86E-A34A16795286}"
@@ -41,9 +36,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonServiceLocator.SolrNe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolrNet.Cloud", "SolrNet.Cloud\SolrNet.Cloud.csproj", "{BDA98C34-3B00-4B1F-B850-9C776FEDE8E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolrNet.Cloud.Tests", "SolrNet.Cloud.Tests\SolrNet.Cloud.Tests.csproj", "{C4FF031C-FB88-4186-9305-B180A07EC7DA}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unity.SolrNetCloudIntegration", "Unity.SolrNetCloudIntegration\Unity.SolrNetCloudIntegration.csproj", "{7B507754-C877-4DE7-AE2A-19CF5191C95E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolrNet.Cloud.Tests", "SolrNet.Cloud.Tests\SolrNet.Cloud.Tests.csproj", "{C4FF031C-FB88-4186-9305-B180A07EC7DA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolrNet.Tests.Common", "SolrNet.Tests.Common\SolrNet.Tests.Common.csproj", "{48DA5170-B96E-485C-941D-0D7797DCA0EF}"
 EndProject
@@ -105,14 +98,6 @@ Global
 		{77E47E7C-2CEE-406A-B344-9699DA0F1851}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77E47E7C-2CEE-406A-B344-9699DA0F1851}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77E47E7C-2CEE-406A-B344-9699DA0F1851}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7645E009-0ADC-420E-B00D-3745934E6AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7645E009-0ADC-420E-B00D-3745934E6AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7645E009-0ADC-420E-B00D-3745934E6AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7645E009-0ADC-420E-B00D-3745934E6AB1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E29AED1-1680-4EC0-9499-F6B8FB8C1CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E29AED1-1680-4EC0-9499-F6B8FB8C1CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E29AED1-1680-4EC0-9499-F6B8FB8C1CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E29AED1-1680-4EC0-9499-F6B8FB8C1CC9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4BC966D4-2EC0-47FF-B784-B649BFAABD81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4BC966D4-2EC0-47FF-B784-B649BFAABD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BC966D4-2EC0-47FF-B784-B649BFAABD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -145,10 +130,6 @@ Global
 		{C4FF031C-FB88-4186-9305-B180A07EC7DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4FF031C-FB88-4186-9305-B180A07EC7DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4FF031C-FB88-4186-9305-B180A07EC7DA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7B507754-C877-4DE7-AE2A-19CF5191C95E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B507754-C877-4DE7-AE2A-19CF5191C95E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B507754-C877-4DE7-AE2A-19CF5191C95E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B507754-C877-4DE7-AE2A-19CF5191C95E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{48DA5170-B96E-485C-941D-0D7797DCA0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{48DA5170-B96E-485C-941D-0D7797DCA0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48DA5170-B96E-485C-941D-0D7797DCA0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -183,7 +164,6 @@ Global
 		{08D59BEE-EC70-4AC8-B6F6-3088B81A6251} = {C167AD0C-270B-4297-94C5-BE5548AA6038}
 		{9D497D73-1E2F-4CA2-B518-93919BCC5A6D} = {C167AD0C-270B-4297-94C5-BE5548AA6038}
 		{77E47E7C-2CEE-406A-B344-9699DA0F1851} = {C167AD0C-270B-4297-94C5-BE5548AA6038}
-		{3E29AED1-1680-4EC0-9499-F6B8FB8C1CC9} = {C167AD0C-270B-4297-94C5-BE5548AA6038}
 		{4BC966D4-2EC0-47FF-B784-B649BFAABD81} = {C167AD0C-270B-4297-94C5-BE5548AA6038}
 		{042745E4-2750-41B5-9CCD-5156029CB6B6} = {C167AD0C-270B-4297-94C5-BE5548AA6038}
 		{0988D6A2-04FD-4328-AFFA-677DB377432D} = {C167AD0C-270B-4297-94C5-BE5548AA6038}
@@ -193,7 +173,7 @@ Global
 		{82DB35C4-2E5B-44CD-81A2-9E66C9AC933C} = {C167AD0C-270B-4297-94C5-BE5548AA6038}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BC12CF2E-A108-47A2-B60C-A17B3102D52D}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45
+		SolutionGuid = {BC12CF2E-A108-47A2-B60C-A17B3102D52D}
 	EndGlobalSection
 EndGlobal

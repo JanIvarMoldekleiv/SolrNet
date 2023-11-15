@@ -11,7 +11,7 @@ namespace Unity.SolrNetIntegration.Collections
 {
     public class NullResolverOverrideExtractor : ResolverOverrideExtractor
     {
-        public override ResolverOverride[] ExtractResolverOverrides(IBuilderContext context)
+        public override ResolverOverride[] ExtractResolverOverrides(BuilderContext context)
         {
             return new ResolverOverride[0];
         }
